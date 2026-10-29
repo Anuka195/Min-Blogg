@@ -1,0 +1,210 @@
+
+/* HELA SIDAN */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #FAF7F4;
+    font-family: Arial, sans-serif;
+    color: #352C30;
+    line-height: 1.6;
+}
+
+/* TILLBAKA TILL BLOGGEN */
+
+body > a {
+    display: block;
+    max-width: 850px;
+    margin: 15px auto 25px;
+    color: #9F6A76;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+body > a:hover {
+    text-decoration: underline;
+}
+
+/* BLOGGINLÄGGET */
+
+#postContainer {
+    background-color: white;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000012;
+}
+
+#postContainer h2 {
+    color: #57383F;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+#postContainer p {
+    font-size: 17px;
+}
+
+/* TA BORT-KNAPPEN */
+
+#deleteButton {
+    display: block;
+    margin: 15px max(0px, calc((100% - 850px) / 2)) 40px auto;
+    background-color: #B83F4B;
+}
+
+/* KOMMENTARER */
+
+#commentsSection {
+    max-width: 850px;
+    margin: 0 auto 30px;
+}
+
+#commentsSection h2 {
+    color: #57383F;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+#commentsContainer p {
+    background-color: white;
+    padding: 18px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #EAD8D6;
+}
+
+/* FORMULÄR */
+
+#commentForm,
+#editForm {
+    background-color: white;
+    max-width: 850px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000012;
+}
+
+#editForm h1 {
+    color: #57383F;
+    font-size: 26px;
+}
+
+/* TEXTFÄLT */
+
+#commentInput,
+#editTitle,
+#editBody {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #EAD8D6;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#commentInput,
+#editBody {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* KNAPPAR */
+
+button {
+    background-color: #9F6A76;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #57383F;
+}
+
+#deleteButton:hover {
+    background-color: #943440;
+}
+
+/* FELMEDDELANDEN */
+
+#errorMessage {
+    max-width: 850px;
+    margin: 15px auto;
+    color: darkred;
+}
+
+/* SURFPLATTA */
+
+@media (max-width: 900px) {
+    body {
+        padding: 20px;
+    }
+
+    #postContainer,
+    #commentForm,
+    #editForm {
+        padding: 22px;
+    }
+
+    #postContainer h2 {
+        font-size: 26px;
+    }
+}
+
+/* MOBIL */
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    body > a {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    #postContainer {
+        padding: 20px;
+    }
+
+    #postContainer h2 {
+        font-size: 23px;
+    }
+
+    #postContainer p {
+        font-size: 16px;
+    }
+
+    #commentsSection h2 {
+        font-size: 23px;
+    }
+
+    #commentForm,
+    #editForm {
+        padding: 20px;
+    }
+
+    #editForm h1 {
+        font-size: 23px;
+    }
+
+    #deleteButton {
+        margin-right: 0;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}

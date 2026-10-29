@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min blogg</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+    <header>
+    <h1>
+        <img src="assetss/Blogg logo.png" alt="logo">
+    </h1>
+
+    <nav>
+    <a href="#hem">Hem</a>
+    <a href="#om">Om</a>
+</nav>
+</header>
+
+<main id="hem">
+<div class="filters">
+    <input type="text" id="searchInput" placeholder="Sök blogginlägg...">
+
+<select id="tagFilter">
+    <option value="all">Alla taggar</option>
+    <option value="history">History</option>
+    <option value="fiction">Fiction</option>
+    <option value="love">Love</option>
+</select>
+
+<select id="sortSelect">
+    <option value="Ursprunglig">Ursprunglig ordning</option>
+    <option value="Flest">Flest visningar</option>
+    <option value="Minst">Minst visningar</option>
+    
+</select>
+
+</div>   
+
+    <div id="postContainer"></div>
+    <p id="errorMessage"></p>
+</main>
+    
+<section id="om">
+    <h2>Om bloggen</h2>
+    <p>
+Välkommen till MyBlog! <br><br>
+
+MyBlog är en blogg där du kan upptäcka och läsa olika blogginlägg om flera intressanta ämnen. Här finns möjlighet att utforska nya berättelser, tankar och idéer.
+På bloggen kan du enkelt söka efter inlägg, filtrera efter olika kategorier och sortera inläggen efter antal visningar. Du kan också klicka på ett inlägg för att läsa mer och se vad andra har kommenterat.
+Du har även möjlighet att lämna egna kommentarer och dela dina tankar. Bloggen är skapad för att vara enkel att använda och fungera på både mobil, surfplatta och dator.
+Syftet med MyBlog är att skapa en trevlig och användarvänlig plats där läsare kan upptäcka innehåll och vara delaktiga genom kommentare</p>
+</section>
+    
+</body>
+</html>

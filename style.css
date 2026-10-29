@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FAF7F4;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+header {
+    background-color: #57383F;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#om {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* Sökfält och filter */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 35px 20px;
+    flex-wrap: wrap;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #EAD8D6;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Blogginlägg */
+
+#postContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+article {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000012;
+}
+
+article h2 {
+    color: #57383F;
+}
+
+article a {
+    display: inline-block;
+    background-color: #9F6A76;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+article a:hover {
+    background-color: #57383F;
+}
+
+#errorMessage {
+    color: darkred;
+    text-align: center;
+}
+
+
+/* SURFPLATTA */
+
+@media (max-width: 900px) {
+    header img {
+        width: 200px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    #postContainer {
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    article {
+        padding: 20px;
+    }
+}
+
+/* MOBILER */
+
+@media (max-width: 480px) {
+    header img {
+        width: 150px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    article {
+        padding: 15px;
+    }
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="post.js" defer></script>
+    <link rel="stylesheet" href="post.css">
+</head>
+
+<body>
+    <a href="index.html">Tillbaka till bloggen</a>
+    <div id="postContainer"></div>
+    <button id="deleteButton">Ta bort</button>
+
+    <p id="errorMessage"></p>
+
+    <div id="commentsSection">
+        <h2>Kommentarer</h2>
+        <div id="commentsContainer"></div>
+    </div>
+
+    <form id="commentForm">
+        <textarea id="commentInput" placeholder="Skriv en kommentar..."></textarea>
+        <button type="submit">Skicka kommentar</button>
+    </form>
+
+
+
+    <form id="editForm">
+        <h1>Redigera blogginlägg</h1>
+        <input type="text" id="editTitle" placeholder="Ändra rubrik">
+
+        <textarea id="editBody" placeholder="Ändra innehåll"></textarea>
+
+        <button type="submit" id="saveButton">Spara ändringar</button>
+    </form>
+</body>
+
+</html>
